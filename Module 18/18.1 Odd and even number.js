@@ -24,7 +24,6 @@ console.log(resultEvenArray);
 // evenifyAll(friend_age);
 // console.log(evenifyAll(friend_age))
 
-
 // So ..This is the problem. If you want to take multiple result from a 
 // function don't use return. Because return will give you only a single result.So use console In this case
 // But the problem can be solved by creating extra array. At first the new array will be blanked.
