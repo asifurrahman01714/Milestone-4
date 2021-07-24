@@ -26,6 +26,8 @@
         <p class="author">author-1</p>
         <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, neque.</h3>
     </article>
+
+
     <script>
         let article1 = document.getElementById("article1");
         let newParagraph = document.createElement("p");
@@ -122,5 +124,26 @@
         newGift.innerHTML = "GiftItem Added By CreateElement";
         gift.appendChild(newGift);
     </script>
+
+
+    <article id="anotherArticle">
+        <h3>article-1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, similique.</p>
+    </article>
+    <script>
+        let anotherArticle = document.getElementById('anotherArticle');
+        anotherArticle.style.border = "2px solid black";
+        anotherArticle.style.padding = "10px";
+    </script>
+
+
+    <article>
+        <h3>article-1</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, molestias?</p>
+    </article>
+    <article>
+        <h3>article-1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, rem!</p>
+    </article>
 </body>
 </html>
