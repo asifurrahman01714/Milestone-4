@@ -1,19 +1,16 @@
-let nums = [12,34,25,67,34,23];
-for (let i = 0; i < nums.length; i++) {
-    const num = nums[i];
-    evenify(num);
-}
-
-function evenify(num) {
-    if (num % 2 == 0) {
-        console.log(num, 'This  number is even')
-    } else {
-        console.log(num*2, 'This number is odd');
+function evenifyAll(array) {
+    for (let i = 0; i < array.length; i++) {
+        const num = array[i];
+        if (num % 2 == 0) {
+            console.log(num, 'This  number is even')
+        } else {
+            console.log(num*2, 'This number is odd');
+        }
     }
 }
 
+let nums = [12,34,25,67,34,23];
+evenifyAll(nums);
+
 let friend_age = [21,22,23,24,25,26,27];
-for (let i = 0; i < friend_age.length; i++) {
-    const age = friend_age[i];
-    evenify(age);
-}
+evenifyAll(friend_age);
