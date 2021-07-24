@@ -109,5 +109,18 @@
         let setTitleAsAttribute = document.getElementById('setTitle');
         setTitleAsAttribute.setAttribute('title','I am the set Attribute Title');
     </script>
+    
+    <!-- Adding more item in list -->
+    <ul id="giftItem">
+        <li>giftItem-1</li>
+        <li>giftItem-2</li>
+        <li>giftItem-3</li>
+    </ul>
+    <script>
+        let gift = document.getElementById('giftItem');
+        let newGift = document.createElement('li');
+        newGift.innerHTML = "GiftItem Added By CreateElement";
+        gift.appendChild(newGift);
+    </script>
 </body>
-</html>y
+</html>
