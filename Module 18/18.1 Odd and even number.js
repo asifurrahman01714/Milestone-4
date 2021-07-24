@@ -5,6 +5,6 @@ for (let i = 0; i < nums.length; i++) {
     if (element % 2 == 0) {
         console.log(element, 'This  number is even')
     } else {
-        console.log(element, 'This number is odd');
+        console.log(element*2, 'This number is odd');
     }
 }
