@@ -8,16 +8,21 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <h1>How  to write javascript in html?</h1>
+    <h1 id="first">How  to write javascript in html?</h1>
     <script>
         console.log(120);
-        debugger;
+        // debugger;
     </script>
     <h2>By three ways we can include javascript in html</h2>
     <script>
         console.log(34);
-        debugger;
+        // debugger;
     </script>
     <h1>1. After title 2. Before the last body tag 3. As a external file</h1>
+    <script>
+        var first = document.getElementById("first");
+        first.style.color ='red';
+        first.style.fontSize = '30px'
+    </script>
 </body>
 </html>
