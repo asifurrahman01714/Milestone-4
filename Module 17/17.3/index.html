@@ -9,6 +9,7 @@
 </head>
 <body>
     <h1 id="first">How  to write javascript in html?</h1>
+   
     <script>
         console.log(120);
         // debugger;
@@ -21,10 +22,17 @@
     <h1>1. After title 2. Before the last body tag 3. As a external file</h1>
 
     <!-- article*3>p.author{author-$}+h3{lorem20} -- This the way to write multiple line with one line codding--> 
-    <article>
+    <article id="article1">
         <p class="author">author-1</p>
         <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, neque.</h3>
     </article>
+    <script>
+        let article1 = document.getElementById("article1");
+        let newParagraph = document.createElement("p");
+        newParagraph.innerHTML = "Hei, I am added by createElement()";
+        article1.appendChild(newParagraph);
+    </script>
+
     <article>
         <p class="author">author-2</p>
         <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, quibusdam!</h3>
