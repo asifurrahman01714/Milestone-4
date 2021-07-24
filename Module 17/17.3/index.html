@@ -35,8 +35,18 @@
     </article>
 
 
+    <article class="specialArticle">
+        <h1>article-1</h1>
+    </article>
+    <article class="specialArticle">
+        <h1>article-2</h1>
+    </article>
+    <article class="specialArticle">
+        <h1>article-3</h1>
+    </article>
 
     <script>
+      
         var first = document.getElementById("first");
         first.style.color ='red';
         first.style.fontSize = '30px';
@@ -50,6 +60,15 @@
             console.log(element);
             element.style.backgroundColor = "green";
             element.innerHTML = "Lekhok " + i;
+        }
+
+        // querySelectorAll
+        let specialArticlesHeading = document.querySelectorAll('.specialArticle h1');
+        for (let i = 0; i < specialArticlesHeading.length; i++) {
+            const element = specialArticlesHeading[i];
+            console.log(element);
+            element.style.backgroundColor = "red";
+            element.style.fontSize = "32px";
         }
     </script>
 </body>
