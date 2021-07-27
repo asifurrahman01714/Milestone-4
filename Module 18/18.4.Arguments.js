@@ -7,6 +7,10 @@ function addNumbers(num1, num2) {
         const element = arguments[i];
         sum = sum + element;
     }
+    function logInfo(message) {
+        console.log(message);
+    }
+    logInfo('Hei,Call a function after declaring it. Although any error not created but it is a good practice/')
     return sum;
 }
 let result = addNumbers(2,3,4,5);
