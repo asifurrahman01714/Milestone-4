@@ -88,6 +88,28 @@
             event.stopPropagation(); // Stopping event bubbling
         })
     </script>
+
+
+    <ul id="secondList">
+        <li class="item">lorem-1</li>
+        <li class="item">lorem-2</li>
+        <li class="item">lorem-3</li>
+    </ul>
+    <button id="addItemInSecondList">Add your item</button>
+    <script>
+        document.getElementById('addItemInSecondList').addEventListener('click', function(e){
+            let secondList = document.getElementById('secondList');
+            let newList = document.createElement('li');
+            newList.innerText = 'I am New Here';
+            secondList.appendChild(newList);
+        })
+
+        document.getElementById('secondList').addEventListener('click', function(e){
+            console.log('this',this, 'vs event target',e.target);
+            console.log(e.target.parentNode);
+            e.target.parentNode.removeChild(e.target);
+        })
+    </script>
 </body>
 
 </html>
