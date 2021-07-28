@@ -43,8 +43,11 @@
         var listItems = document.getElementsByClassName('list-item');
         for (let i = 0; i < listItems.length; i++) {
             const element = listItems[i];
-            console.log(element);
+            // console.log(element);
             element.addEventListener('click',function(){
+                console.log(this);
+                console.log(event.target);
+                console.log('hence . this and event bubble is same');
                 element.style.display = 'none';
             })
         }
