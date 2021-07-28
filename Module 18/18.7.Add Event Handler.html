@@ -41,13 +41,23 @@
     </script>
 
 
-    <button id="sb2">Special Button 2</button><br>
+    <button id="sb2">Special Button 2</button><br><br>
     <script>
         function backgroundColorChange() {
             document.body.style.backgroundColor = "red";
         }
         const sb2 = document.getElementById("sb2");
         sb2.addEventListener("click",backgroundColorChange);
+    </script>
+
+
+    <button id="lastPerson">Last Person</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, harum?</p>
+    <script>
+        let lastPerson = document.getElementById("lastPerson");
+        lastPerson.addEventListener("click",function(){
+            document.body.style.color = "tomato";
+        })
     </script>
 </body>
 </html>
