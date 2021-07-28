@@ -11,6 +11,13 @@
     <button onclick="alert('Hero Programmer')">Hero Programmer</button>
     <button onclick="handleClick()">With HandleClick Function</button>
     <button onmousemove="handleClick()">HandleClick Function with mousemove</button>
+    <button id="sb1">Special Button 1</button>
+    <script>
+        const sb1 = document.getElementById('sb1');
+        sb1.onclick =function () {
+            alert('Special Button 1');
+        }
+    </script>
     <script>
         function handleClick() {
             alert('I am clicked');
