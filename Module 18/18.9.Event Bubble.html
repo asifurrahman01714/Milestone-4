@@ -49,7 +49,9 @@
                 console.log('Accessing innerText by this keyword', this.innerText);
                 console.log(event.target);
                 console.log('Accessing innerText by event keyword', event.target.innerText);
-                console.log('hence . this and event bubble is same');
+                // console.log('hence . this and event bubble is same');
+
+                console.log('Accessing ParentNode',this.parentNode);
 
                 element.style.display = 'none';
             })
