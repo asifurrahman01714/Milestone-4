@@ -38,6 +38,7 @@
             <li class="list-item">2. Lorem, ipsum dolor.</li>
             <li class="list-item">Lorem, ipsum dolor.</li>
         </ul>
+        <button id="addItem">Add New Item</button>
     </div>
     <script>
         var listItems = document.getElementsByClassName('list-item');
@@ -52,13 +53,19 @@
                 // console.log('hence . this and event bubble is same');
 
                 console.log('Accessing ParentNode',this.parentNode);
-
-                // element.style.display = 'none';
-                // this.parentNode.removeChild(this);
-                // event.target.parentNode.removeChild(this);
+                element.style.display = 'none';
+                this.parentNode.removeChild(this);
+                event.target.parentNode.removeChild(this);
                 event.target.parentNode.removeChild(event.target);
             })
         }
+
+        document.getElementById('addItem').addEventListener('click',function(e) {
+            let parentItem = document.getElementById('myList');
+            let newItem = document.createElement('li');
+            newItem.innerText = 'New Brand Item';
+            parentItem.appendChild(newItem);
+        })
     </script>
     <script>
         document.getElementById('container').addEventListener('click',function(e) {
