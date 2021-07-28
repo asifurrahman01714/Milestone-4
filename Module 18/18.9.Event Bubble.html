@@ -19,6 +19,28 @@
             eventBubbleDefinition.style.display = 'block';
         })
     </script>
+
+
+    <div id="container">
+        <ul id="myList">
+            <li class="list-item-1">Lorem, ipsum dolor.</li>
+            <li class="list-item-2">Lorem, ipsum dolor.</li>
+            <li class="list-item-3">Lorem, ipsum dolor.</li>
+        </ul>
+    </div>
+    <script>
+        document.getElementById('container').addEventListener('click',function(e) {
+            console.log('container clicked');
+        })
+
+        document.getElementById('myList').addEventListener('click',function(e) {
+            console.log('ul clicked');
+        })
+
+        document.getElementsByClassName('list-item-1')[0].addEventListener('click',function(){
+            console.log('first li clicked');
+        })
+    </script>
 </body>
 
 </html>
