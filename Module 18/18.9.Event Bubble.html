@@ -16,7 +16,7 @@
 
         Syntax:
         addEventListener(type, listener, useCapture);
-        
+
         Parameters:
         type: Use to refer to the type of event.
         listener: Function we want to call when the event of the specified type occurs.
@@ -50,6 +50,7 @@
 
         document.getElementsByClassName('list-item-1')[0].addEventListener('click',function(){
             console.log('first li clicked');
+            even.stopPropagation(); // Stopping event bubbling
         })
     </script>
 </body>
