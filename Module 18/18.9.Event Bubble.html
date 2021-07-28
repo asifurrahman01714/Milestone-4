@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling</title>
+</head>
+<body>
+    <h1 id="whatIsEventBubbling">What is Event Bubbling?</h1>
+    <p style="display:none" id="eventBubbleDefinition">Event bubbling is a method of event propagation in the HTML DOM API when an event is in 
+        an element inside another element, and both elements have registered a handle to that event. 
+        It is a process that starts with the element that triggered the event and then bubbles up to 
+        the containing elements in the hierarchy.
+    </p>
+    <script>
+        document.getElementById('whatIsEventBubbling').addEventListener('click', function(e) {
+            let eventBubbleDefinition = document.getElementById("eventBubbleDefinition");
+            eventBubbleDefinition.style.display = 'block';
+        })
+    </script>
+</body>
+
+</html>
