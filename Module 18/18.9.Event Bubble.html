@@ -34,8 +34,8 @@
 
     <div id="container">
         <ul id="myList">
-            <li class="list-item">Lorem, ipsum dolor.</li>
-            <li class="list-item">Lorem, ipsum dolor.</li>
+            <li class="list-item">1. Lorem, ipsum dolor.</li>
+            <li class="list-item">2. Lorem, ipsum dolor.</li>
             <li class="list-item">Lorem, ipsum dolor.</li>
         </ul>
     </div>
@@ -53,7 +53,8 @@
 
                 console.log('Accessing ParentNode',this.parentNode);
 
-                element.style.display = 'none';
+                // element.style.display = 'none';
+                this.parentNode.removeChild(this);
             })
         }
     </script>
