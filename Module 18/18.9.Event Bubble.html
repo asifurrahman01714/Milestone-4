@@ -65,6 +65,10 @@
             let newItem = document.createElement('li');
             newItem.innerText = 'New Brand Item';
             parentItem.appendChild(newItem);
+
+            newItem.addEventListener('click',function(e) {
+                this.parentNode.removeChild(this);
+            })
         })
     </script>
     <script>
