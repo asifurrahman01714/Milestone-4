@@ -42,14 +42,17 @@
     <script>
         document.getElementById('container').addEventListener('click',function(e) {
             console.log('container clicked');
+            alert('container clicked');
         })
 
         document.getElementById('myList').addEventListener('click',function(e) {
             console.log('ul clicked');
+            alert('ul clicked');
         })
 
         document.getElementsByClassName('list-item-1')[0].addEventListener('click',function(){
             console.log('first li clicked');
+            alert('first li clicked');
             event.stopPropagation(); // Stopping event bubbling
         })
     </script>
