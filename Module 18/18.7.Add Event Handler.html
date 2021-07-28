@@ -7,12 +7,12 @@
     <title>Event Management Company</title>
 </head>
 <body>
-    <button onclick="alert(7)">Click me</button>
-    <button onclick="alert('Hero Programmer')">Hero Programmer</button>
+    <button onclick="alert(7)">Click me</button><br><br>
+    <button onclick="alert('Hero Programmer')">Hero Programmer</button><br><br>
 
 
-    <button onclick="handleClick()">With HandleClick Function</button>
-    <button onmousemove="handleClick()">HandleClick Function with mousemove</button>
+    <button onclick="handleClick()">With HandleClick Function</button><br><br>
+    <button onmousemove="handleClick()">HandleClick Function with mousemove</button><br><br>
     <script>
         function handleClick() {
             alert('I am clicked');
@@ -21,7 +21,7 @@
 
 
 
-    <button id="sb1">Special Button 1</button>
+    <button id="sb1">Special Button 1</button><br><br>
     <script>
         const sb1 = document.getElementById('sb1');
         sb1.onclick =function () {
@@ -31,13 +31,23 @@
 
 
 
-    <button id="cbc">Change background color</button>
+    <button id="cbc">Change background color</button><br><br>
     <script>
         function backgroundColorChange() {
             document.body.style.backgroundColor = "cyan";
         }
         const cbc = document.getElementById("cbc");
         cbc.onclick =backgroundColorChange;
+    </script>
+
+
+    <button id="sb2">Special Button 2</button><br>
+    <script>
+        function backgroundColorChange() {
+            document.body.style.backgroundColor = "red";
+        }
+        const sb2 = document.getElementById("sb2");
+        sb2.addEventListener("click",backgroundColorChange);
     </script>
 </body>
 </html>
