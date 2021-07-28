@@ -9,8 +9,18 @@
 <body>
     <button onclick="alert(7)">Click me</button>
     <button onclick="alert('Hero Programmer')">Hero Programmer</button>
+
+
     <button onclick="handleClick()">With HandleClick Function</button>
     <button onmousemove="handleClick()">HandleClick Function with mousemove</button>
+    <script>
+        function handleClick() {
+            alert('I am clicked');
+        }
+    </script>
+
+
+
     <button id="sb1">Special Button 1</button>
     <script>
         const sb1 = document.getElementById('sb1');
@@ -18,10 +28,16 @@
             alert('Special Button 1');
         }
     </script>
+
+
+
+    <button id="cbc">Change background color</button>
     <script>
-        function handleClick() {
-            alert('I am clicked');
+        function backgroundColorChange() {
+            document.body.style.backgroundColor = "cyan";
         }
+        const cbc = document.getElementById("cbc");
+        cbc.onclick =backgroundColorChange;
     </script>
 </body>
 </html>
