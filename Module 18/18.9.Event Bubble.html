@@ -34,25 +34,35 @@
 
     <div id="container">
         <ul id="myList">
-            <li class="list-item-1">Lorem, ipsum dolor.</li>
-            <li class="list-item-2">Lorem, ipsum dolor.</li>
-            <li class="list-item-3">Lorem, ipsum dolor.</li>
+            <li class="list-item">Lorem, ipsum dolor.</li>
+            <li class="list-item">Lorem, ipsum dolor.</li>
+            <li class="list-item">Lorem, ipsum dolor.</li>
         </ul>
     </div>
     <script>
+        var listItems = document.getElementsByClassName('list-item');
+        for (let i = 0; i < listItems.length; i++) {
+            const element = listItems[i];
+            console.log(element);
+            element.addEventListener('click',function(){
+                element.style.display = 'none';
+            })
+        }
+    </script>
+    <script>
         document.getElementById('container').addEventListener('click',function(e) {
             console.log('container clicked');
-            alert('container clicked');
+            //alert('container clicked');
         })
 
         document.getElementById('myList').addEventListener('click',function(e) {
             console.log('ul clicked');
-            alert('ul clicked');
+            //alert('ul clicked');
         })
 
-        document.getElementsByClassName('list-item-1')[0].addEventListener('click',function(){
+        document.getElementsByClassName('list-item')[0].addEventListener('click',function(){
             console.log('first li clicked');
-            alert('first li clicked');
+            //alert('first li clicked');
             event.stopPropagation(); // Stopping event bubbling
         })
     </script>
