@@ -100,15 +100,26 @@
         let totalBalance;
 
         submitDeposit.addEventListener('click',function(e){
+            /*
             showDeposit.innerText = depositAmount.value;
             totalBalance = parseInt(showBalance.innerText) + parseInt(showDeposit.innerText);
             showBalance.innerText = totalBalance;
+            */
+           calculateMe(showDeposit,depositAmount);
         })
+        function calculateMe(a,b) {
+            a.innerText = b.value;
+            totalBalance = parseInt(showBalance.innerText) + parseInt(a.innerText);
+            showBalance.innerText = totalBalance;
+        }
 
         submitWithdraw.addEventListener('click',function(e){
+            /*
             showWithdraw.innerText = withdrawAmount.value;
             totalBalance = parseInt(showBalance.innerText) - parseInt(showWithdraw.innerText);
             showBalance.innerText = totalBalance;
+            */ 
+            calculateMe(showWithdraw,withdrawAmount);
         })
         
     </script>
