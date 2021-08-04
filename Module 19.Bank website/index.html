@@ -103,14 +103,12 @@
             showDeposit.innerText = depositAmount.value;
             totalBalance = parseInt(showBalance.innerText) + parseInt(showDeposit.innerText);
             showBalance.innerText = totalBalance;
-            showWithdraw.innerText = "00";
         })
 
         submitWithdraw.addEventListener('click',function(e){
             showWithdraw.innerText = withdrawAmount.value;
             totalBalance = parseInt(showBalance.innerText) - parseInt(showWithdraw.innerText);
             showBalance.innerText = totalBalance;
-            showDeposit.innerText = 00;
         })
         
     </script>
