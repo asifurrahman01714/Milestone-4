@@ -11,9 +11,13 @@ loginBtn.onclick = function(){
 }
 */
 loginBtn.addEventListener('click' ,function(e){
-    calculation.style.display= "block";
-    loginForm.style.display= "none";
-    e.preventDefault();
+    if (email.value !== "" || password.value!== "") {
+        calculation.style.display= "block";
+        loginForm.style.display= "none";
+        e.preventDefault();
+    }else{
+        alert("Please Fill in your email and password");
+    }
 })
 
 const showDeposit = document.getElementById('showDeposit');
