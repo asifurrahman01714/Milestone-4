@@ -1,6 +1,8 @@
 const loginForm = document.getElementById('loginForm');
 const calculation = document.getElementById('calculation');
 const loginBtn = document.getElementById('loginBtn');
+const email = document.getElementById('email');
+const password = document.getElementById('password');
 /* 
 loginBtn.onclick = function(){
     calculation.style.display= "block";
@@ -32,13 +34,20 @@ submitDeposit.addEventListener('click',function(e){
    calculateMe(showDeposit,depositAmount);
 })
 function calculateMe(a,b) {
+    console.log(typeof b.value);
     a.innerText = b.value;
     if (a == showDeposit) {
         totalBalance = parseInt(showBalance.innerText) + parseInt(a.innerText);
     }else {
         totalBalance = parseInt(showBalance.innerText) - parseInt(a.innerText);
+        if (totalBalance > 0) {
+            showBalance.innerText = totalBalance;
+        }else{
+            alert("Don't have enough funds in your account..!!!");
+            a.innerText = "00";
+        }
     }
-    showBalance.innerText = totalBalance;
+
 }
 
 submitWithdraw.addEventListener('click',function(e){
