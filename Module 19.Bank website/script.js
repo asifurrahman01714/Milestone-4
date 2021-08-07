@@ -51,6 +51,7 @@ function calculateMe(a,b) {
             a.innerText = "00";
         }
     }
+    b.value = ""; // Clear the amount after including it..
 
 }
 
