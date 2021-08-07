@@ -42,17 +42,17 @@
                            let phoneInput = document.getElementById("phoneInput");
                            let phoneInputNumber = parseInt(phoneInput.value);
                            let phonePrice = document.getElementById("phonePrice");
-                           phoneInput.value = phoneInputNumber + 1;
+                           phoneInput.value = ++phoneInputNumber;
                            console.log("phoneInputNumber",phoneInputNumber, typeof phoneInputNumber);
-                           phonePrice.innerText = 1219 * (phoneInputNumber + 1);
+                           phonePrice.innerText = 1219 * (phoneInputNumber);
                         });
 
                         phoneMinus.addEventListener("click",function(){
                            let phoneInput = document.getElementById("phoneInput");
                            let phoneInputNumber = parseInt(phoneInput.value);
                            let phonePrice = document.getElementById("phonePrice");
-                           phoneInput.value = phoneInputNumber - 1;
-                           phonePrice.innerText = 1219 * (phoneInputNumber - 1);
+                           phoneInput.value = --phoneInputNumber;
+                           phonePrice.innerText = 1219 * (phoneInputNumber);
                            if (phoneInput.value <= 0) {
                               phoneInput.value = 0;
                               phonePrice.innerText = 0;
