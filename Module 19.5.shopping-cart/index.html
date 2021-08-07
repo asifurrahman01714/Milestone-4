@@ -26,7 +26,7 @@
                      <div class="col-md-5 center-item">
                         <div class="input-group number-spinner">
                            <button class="btn btn-default" id="phoneMinus"><i class="fas fa-minus" ></i></button>
-                           <input type="number" class="form-control text-center"  value="1"  id="phoneInput">
+                           <input type="text" class="form-control text-center"  value="1"  id="phoneInput">
                            <button class="btn btn-default"  id="phonePlus"><i class="fas fa-plus"></i></button>
                         </div>
                         <h5>$ <span id="phonePrice">1219</span></h5>
@@ -93,6 +93,7 @@
          let phonePrice = document.getElementById("phonePrice");
          phoneInput.value = ++phoneInputNumber;
          console.log("phoneInputNumber",phoneInputNumber, typeof phoneInputNumber);
+         console.log({phoneInputNumber});
          phonePrice.innerText = 1219 * (phoneInputNumber);
 
          total.innerText = totalNumber + (1219 * (phoneInputNumber));
