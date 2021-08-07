@@ -39,9 +39,11 @@ submitDeposit.addEventListener('click',function(e){
 })
 function calculateMe(a,b) {
     console.log(typeof b.value);
-    a.innerText = b.value;
+    
+    a.innerText = parseInt(a.innerText)+ parseInt(b.value);
     if (a == showDeposit) {
         totalBalance = parseInt(showBalance.innerText) + parseInt(a.innerText);
+        showBalance.innerText = totalBalance;
     }else {
         totalBalance = parseInt(showBalance.innerText) - parseInt(a.innerText);
         if (totalBalance > 0) {
