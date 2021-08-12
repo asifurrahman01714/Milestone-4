@@ -5,4 +5,6 @@ phonePlus.addEventListener('click',function(e){
     console.log(phoneInput.value);
     const phoneInputNumber = parseInt(phoneInput.value);
     console.log(phoneInputNumber);
+
+    phoneInput.value = phoneInputNumber + 1;
 })
