@@ -6,12 +6,12 @@ phonePlus.addEventListener('click',function(e){
     const phoneInputNumber = parseInt(phoneInput.value);
     console.log(phoneInputNumber);
 
-    phoneInput.value = phoneInputNumber + 1;
+    const phoneNewInputNumber = phoneInputNumber + 1;
+    console.log("phoneNewInputNumber", phoneNewInputNumber);
+    phoneInput.value = phoneNewInputNumber;
+
 
     const phonePrice = document.getElementById('phonePrice');
-    console.log(phonePrice.innerText);
-    const phonePriceNumber = parseInt(phonePrice.innerText);
-    console.log(phonePriceNumber);
-
-    phonePrice.innerText = phonePriceNumber * (phoneInputNumber + 1);
+   
+    phonePrice.innerText = 100 * phoneNewInputNumber;
 })
