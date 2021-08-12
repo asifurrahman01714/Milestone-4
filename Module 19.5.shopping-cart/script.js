@@ -7,4 +7,9 @@ phonePlus.addEventListener('click',function(e){
     console.log(phoneInputNumber);
 
     phoneInput.value = phoneInputNumber + 1;
+
+    const phonePrice = document.getElementById('phonePrice');
+    console.log(phonePrice.innerText);
+    const phonePriceNumber = parseInt(phonePrice.innerText);
+    console.log(phonePriceNumber);
 })
