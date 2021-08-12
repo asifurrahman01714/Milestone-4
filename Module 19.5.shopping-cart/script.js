@@ -12,4 +12,6 @@ phonePlus.addEventListener('click',function(e){
     console.log(phonePrice.innerText);
     const phonePriceNumber = parseInt(phonePrice.innerText);
     console.log(phonePriceNumber);
+
+    phonePrice.innerText = phonePriceNumber * (phoneInputNumber + 1);
 })
