@@ -15,3 +15,8 @@ phonePlus.addEventListener('click',function(e){
    
     phonePrice.innerText = 100 * phoneNewInputNumber;
 })
+
+const phoneMinus = document.getElementById('phoneMinus');
+phoneMinus.addEventListener('click',function(e){
+    console.log('phone minus clicked');
+})
