@@ -14,7 +14,11 @@ function ProductChange(productName, isIncrease) {
     if (productNewInputNumber >= 0) {
         productInput.value = productNewInputNumber;
         const productPrice = document.getElementById(productName+'Price');
-        productPrice.innerText = 100 * productNewInputNumber;
+        if (productName == 'phone') {
+            productPrice.innerText = 100 * productNewInputNumber;
+        } else {
+            productPrice.innerText = 50 * productNewInputNumber;
+        }
     }
 }
 
