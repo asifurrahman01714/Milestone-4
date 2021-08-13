@@ -20,6 +20,20 @@ function ProductChange(productName, isIncrease) {
             productPrice.innerText = 50 * productNewInputNumber;
         }
     }
+
+    totalPrice();
+}
+
+function totalPrice() {
+    const phoneInput = document.getElementById('phonePrice');
+    const caseInput = document.getElementById('casePrice');
+    
+    const phoneInputNumber = parseInt(phoneInput.innerText);
+    const caseInputNumber = parseInt(caseInput.innerText);
+    
+    const total = phoneInputNumber + caseInputNumber;
+    const subTotal = document.getElementById('subTotal');
+    subTotal.innerText = total;
 }
 
 
