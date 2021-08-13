@@ -27,12 +27,13 @@ phoneMinus.addEventListener('click',function(e){
     console.log(phoneInputNumber);
     const phoneNewInputNumber = phoneInputNumber - 1;
     console.log("phoneNewInputNumber", phoneNewInputNumber);
-    phoneInput.value = phoneNewInputNumber;
 
-    if (phoneNewInputNumber > 0) {
-        
+    if (phoneNewInputNumber >= 0) {
+        phoneInput.value = phoneNewInputNumber;
+        const phonePrice = document.getElementById('phonePrice');
+        phonePrice.innerText = 100 * phoneNewInputNumber;
     } else {
-        
+        return "Negative product is not acceptable";
     }
 
 })
