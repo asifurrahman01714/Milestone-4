@@ -1,20 +1,20 @@
 function ProductChange(productName, isIncrease) {
     
-    const phoneInput = document.getElementById(productName+'Input');
+    const productInput = document.getElementById(productName+'Input');
     // 'phone' + 'Input' = "phoneInput";
     // 'phone ' + 'Input' = "phone Input";
     // 'case' + 'Input' = "caseInput";
-    let phoneInputNumber = parseInt(phoneInput.value);
-    let phoneNewInputNumber;
+    let productInputNumber = parseInt(productInput.value);
+    let productNewInputNumber;
     if (isIncrease) { // That means, isIncrease == true;
-        phoneNewInputNumber = phoneInputNumber + 1;
+        productNewInputNumber = productInputNumber + 1;
     } else { // That means, isIncrease == false;
-        phoneNewInputNumber = phoneInputNumber - 1;
+        productNewInputNumber = productInputNumber - 1;
     }
-    if (phoneNewInputNumber >= 0) {
-        phoneInput.value = phoneNewInputNumber;
-        const phonePrice = document.getElementById(productName+'Price');
-        phonePrice.innerText = 100 * phoneNewInputNumber;
+    if (productNewInputNumber >= 0) {
+        productInput.value = productNewInputNumber;
+        const productPrice = document.getElementById(productName+'Price');
+        productPrice.innerText = 100 * productNewInputNumber;
     }
 }
 
