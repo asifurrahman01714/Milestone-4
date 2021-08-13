@@ -34,6 +34,9 @@ function totalPrice() {
     const total = phoneInputNumber + caseInputNumber;
     const subTotal = document.getElementById('subTotal');
     subTotal.innerText = total;
+
+    const grandTotal = document.getElementById('grandTotal');
+    grandTotal.innerText = total + total * 0.1;
 }
 
 
