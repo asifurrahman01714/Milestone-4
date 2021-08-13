@@ -1,16 +1,19 @@
-function phoneProductChange(isIncrease) {
+function ProductChange(productName, isIncrease) {
     
-    const phoneInput = document.getElementById('phoneInput');
+    const phoneInput = document.getElementById(productName+'Input');
+    // 'phone' + 'Input' = "phoneInput";
+    // 'phone ' + 'Input' = "phone Input";
+    // 'case' + 'Input' = "caseInput";
     let phoneInputNumber = parseInt(phoneInput.value);
     let phoneNewInputNumber;
-    if (isIncrease) {
+    if (isIncrease) { // That means, isIncrease == true;
         phoneNewInputNumber = phoneInputNumber + 1;
-    } else {
+    } else { // That means, isIncrease == false;
         phoneNewInputNumber = phoneInputNumber - 1;
     }
     if (phoneNewInputNumber >= 0) {
         phoneInput.value = phoneNewInputNumber;
-        const phonePrice = document.getElementById('phonePrice');
+        const phonePrice = document.getElementById(productName+'Price');
         phonePrice.innerText = 100 * phoneNewInputNumber;
     }
 }
