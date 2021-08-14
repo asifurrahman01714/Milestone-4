@@ -86,3 +86,4 @@ function totalPrice() {
 //         casePrice.innerText = 50 * caseNewInputNumber;
 //     }
 // }
+
