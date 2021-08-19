@@ -7,3 +7,4 @@ function greetMorning(name) {
 }
 welcomeGuest(actorName, greetMorning); // Passing greetMorning through welcomeGuest function
 
+// And this process is called call back function..Where greetHandler is a call back function
