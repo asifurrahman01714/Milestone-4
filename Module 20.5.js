@@ -5,6 +5,11 @@ const actorName = 'Asif';
 function greetMorning(name) {
     console.log('Good Morning ' + name);
 }
-welcomeGuest(actorName, greetMorning); // Passing greetMorning through welcomeGuest function
 
+function greetEvening(name) {
+    console.log('Good Evening ' + name);
+}
+
+welcomeGuest(actorName, greetMorning); // Passing greetMorning through welcomeGuest function
+welcomeGuest('Sakib', greetEvening);
 // And this process is called call back function..Where greetHandler is a call back function
