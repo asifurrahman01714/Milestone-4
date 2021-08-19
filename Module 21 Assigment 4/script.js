@@ -24,7 +24,44 @@ function firstClassBtnHandler(isIncrease) {
     }
 
     const subTotal = document.getElementById('subTotal');
-    subTotal.innerText = firstClass.value * 150;
+    subTotal.innerText = parseInt(subTotal.innerText) + firstClass.value * 150;
+
+    const tax = document.getElementById('tax');
+    tax.innerText = subTotal.innerText * 0.1;
+
+    const total = document.getElementById('total');
+    total.innerText = parseInt(subTotal.innerText) + parseInt(tax.innerText);
+}
+
+// Economy Class 
+
+const economyPlusBtn = document.getElementById('economyPlusBtn');
+economyPlusBtn.addEventListener('click',function(e){
+    economyBtnHandler(true);
+});
+
+const economyMinusBtn = document.getElementById('economyMinusBtn');
+economyMinusBtn.addEventListener('click',function(e){
+    economyBtnHandler(false);
+})
+
+function economyBtnHandler(isIncrease) {
+    const economyClass = document.getElementById('economyClass');
+    const economyClassInput = parseInt(economyClass.value);
+    if (isIncrease == true) {
+        economyClass.value = economyClassInput + 1;
+    }
+    else{
+        if (firstClassInput > 0) {
+            economyClass.value = economyClassInput - 1;
+        }
+        else{
+            return "It is not possible negative Input";
+        }
+    }
+
+    const subTotal = document.getElementById('subTotal');
+    subTotal.innerText = parseInt(subTotal.innerText) + economyClass.value * 100;
 
     const tax = document.getElementById('tax');
     tax.innerText = subTotal.innerText * 0.1;
