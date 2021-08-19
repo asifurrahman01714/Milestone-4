@@ -1,4 +1,5 @@
 function welcomeGuest(name) {
     console.log(name);
 }
-welcomeGuest('Asif');
+const actorName = 'Asif';
+welcomeGuest(actorName);
