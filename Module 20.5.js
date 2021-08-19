@@ -1,5 +1,6 @@
 function welcomeGuest(name, greetHandler) {
     greetHandler(name); // here greetHandler is like greetMorning That means by this function actually greetMorning is called
+    console.log(arguments);
 }
 const actorName = 'Asif';
 function greetMorning(name) {
@@ -12,4 +13,7 @@ function greetEvening(name) {
 
 welcomeGuest(actorName, greetMorning); // Passing greetMorning through welcomeGuest function
 welcomeGuest('Sakib', greetEvening);
-// And this process is called call back function..Where greetHandler is a call back function
+welcomeGuest('Jehan', function(name){
+   console.log('Good Afternoon', name); // Added Directly a callback function..by nameless function.
+})
+// And this process is called call back function..Where All greetHandler  functions is a call back function
