@@ -96,12 +96,9 @@ nav ul li a:hover, a.active{
 .inp-width{
     min-width: 300px;
 }
-.plus-minus-btn{
+.plus-minus-btn i{
     color: #3352F2;
-    font-size: 30px;
-    padding: 2px;
-    margin: 10px 5px 0px 0px;
-    word-spacing: 20px;
+    font-size: 20px;
 }
 .booking-form .inputs{
     display: grid;
