@@ -22,4 +22,13 @@ function firstClassBtnHandler(isIncrease) {
             return "It is not possible negative Input";
         }
     }
+
+    const subTotal = document.getElementById('subTotal');
+    subTotal.innerText = firstClass.value * 150;
+
+    const tax = document.getElementById('tax');
+    tax.innerText = subTotal.innerText * 0.1;
+
+    const total = document.getElementById('total');
+    total.innerText = parseInt(subTotal.innerText) + parseInt(tax.innerText);
 }
