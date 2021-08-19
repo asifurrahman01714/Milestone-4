@@ -35,8 +35,11 @@ function totalPrice() {
     const subTotal = document.getElementById('subTotal');
     subTotal.innerText = total;
 
+    let tax = total * 0.1;
+    document.getElementById('tax').innerText = tax;
+    
     const grandTotal = document.getElementById('grandTotal');
-    grandTotal.innerText = total + total * 0.1;
+    grandTotal.innerText = total + tax;
 }
 
 
