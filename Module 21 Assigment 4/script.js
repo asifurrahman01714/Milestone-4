@@ -1,18 +1,25 @@
 const firstClassPlusBtn = document.getElementById('firstClassPlusBtn');
 firstClassPlusBtn.addEventListener('click',function(e){
-    const firstClass = document.getElementById('firstClass');
-    const firstClassInput = parseInt(firstClass.value);
-    firstClass.value = firstClassInput + 1;
+    firstClassBtnHandler(true);
 });
 
 const firstClassMinusBtn = document.getElementById('firstClassMinusBtn');
 firstClassMinusBtn.addEventListener('click',function(e){
+    firstClassBtnHandler(false);
+})
+
+function firstClassBtnHandler(isIncrease) {
     const firstClass = document.getElementById('firstClass');
     const firstClassInput = parseInt(firstClass.value);
-    if (firstClassInput > 0) {
-        firstClass.value = firstClassInput - 1;
+    if (isIncrease == true) {
+        firstClass.value = firstClassInput + 1;
     }
     else{
-        return "It is not possible negative Input";
+        if (firstClassInput > 0) {
+            firstClass.value = firstClassInput - 1;
+        }
+        else{
+            return "It is not possible negative Input";
+        }
     }
-})
+}
