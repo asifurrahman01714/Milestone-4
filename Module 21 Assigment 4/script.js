@@ -46,7 +46,7 @@ function economyBtnHandler(isIncrease) {
         economyClass.value = economyClassInput + 1;
     }
     else{
-        if (firstClassInput > 0) {
+        if (economyClassInput > 0) {
             economyClass.value = economyClassInput - 1;
         }
         else{
