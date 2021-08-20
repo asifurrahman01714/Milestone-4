@@ -22,13 +22,13 @@
 
 function productHandler(isIncrease, productName) {
     const productClass = document.getElementById(productName +'Class');
-    const firstClassInput = parseInt(productClass.value);
+    const productClassInput = parseInt(productClass.value);
     if (isIncrease == true) {
-        firstClass.value = firstClassInput + 1;
+        productClass.value = productClassInput + 1;
     }
     else{
-        if (firstClassInput > 0) {
-            firstClass.value = firstClassInput - 1;
+        if (productClassInput > 0) {
+            productClass.value = productClassInput - 1;
         }
         else{
             return "It is not possible negative Input";
