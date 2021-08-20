@@ -39,24 +39,24 @@ function productHandler(isIncrease, productName) {
 
 }
 
-function economyBtnHandler(isIncrease) {
-    const economyClass = document.getElementById('economyClass');
-    const economyClassInput = parseInt(economyClass.value);
-    if (isIncrease == true) {
-        economyClass.value = economyClassInput + 1;
-    }
-    else{
-        if (economyClassInput > 0) {
-            economyClass.value = economyClassInput - 1;
-        }
-        else{
-            return "It is not possible negative Input";
-        }
-    }
+// function economyBtnHandler(isIncrease) {
+//     const economyClass = document.getElementById('economyClass');
+//     const economyClassInput = parseInt(economyClass.value);
+//     if (isIncrease == true) {
+//         economyClass.value = economyClassInput + 1;
+//     }
+//     else{
+//         if (economyClassInput > 0) {
+//             economyClass.value = economyClassInput - 1;
+//         }
+//         else{
+//             return "It is not possible negative Input";
+//         }
+//     }
 
-    total();
+//     total();
 
-}
+// }
 
 function total() {
     const firstClass = document.getElementById("firstClass");
