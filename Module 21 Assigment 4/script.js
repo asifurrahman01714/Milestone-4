@@ -20,9 +20,9 @@
 // })
 
 
-function productHandler(isIncrease) {
-    const firstClass = document.getElementById('firstClass');
-    const firstClassInput = parseInt(firstClass.value);
+function productHandler(isIncrease, productName) {
+    const productClass = document.getElementById(productName +'Class');
+    const firstClassInput = parseInt(productClass.value);
     if (isIncrease == true) {
         firstClass.value = firstClassInput + 1;
     }
