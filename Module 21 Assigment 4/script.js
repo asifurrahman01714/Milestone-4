@@ -23,14 +23,8 @@ function firstClassBtnHandler(isIncrease) {
         }
     }
 
-    const subTotal = document.getElementById('subTotal');
-    subTotal.innerText = parseInt(subTotal.innerText) + firstClass.value * 150;
+    total();
 
-    const tax = document.getElementById('tax');
-    tax.innerText = subTotal.innerText * 0.1;
-
-    const total = document.getElementById('total');
-    total.innerText = parseInt(subTotal.innerText) + parseInt(tax.innerText);
 }
 
 // Economy Class 
@@ -60,8 +54,20 @@ function economyBtnHandler(isIncrease) {
         }
     }
 
+    total();
+
+}
+
+function total() {
+    const firstClass = document.getElementById("firstClass");
+    const firstClassInput= parseInt(firstClass.value);
+
+    const economyClass = document.getElementById('economyClass');
+    const economyClassInput = parseInt(economyClass.value);
+
+
     const subTotal = document.getElementById('subTotal');
-    subTotal.innerText = parseInt(subTotal.innerText) + economyClass.value * 100;
+    subTotal.innerText = firstClassInput * 150 + economyClassInput * 100 ;
 
     const tax = document.getElementById('tax');
     tax.innerText = subTotal.innerText * 0.1;
