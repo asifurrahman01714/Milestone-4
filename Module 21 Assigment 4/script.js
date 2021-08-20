@@ -7,8 +7,20 @@
 // firstClassMinusBtn.addEventListener('click',function(e){
 //     firstClassBtnHandler(false);
 // })
+// Economy Class 
 
-function firstClassBtnHandler(isIncrease) {
+// const economyPlusBtn = document.getElementById('economyPlusBtn');
+// economyPlusBtn.addEventListener('click',function(e){
+//     economyBtnHandler(true);
+// });
+
+// const economyMinusBtn = document.getElementById('economyMinusBtn');
+// economyMinusBtn.addEventListener('click',function(e){
+//     economyBtnHandler(false);
+// })
+
+
+function productHandler(isIncrease) {
     const firstClass = document.getElementById('firstClass');
     const firstClassInput = parseInt(firstClass.value);
     if (isIncrease == true) {
@@ -26,18 +38,6 @@ function firstClassBtnHandler(isIncrease) {
     total();
 
 }
-
-// Economy Class 
-
-const economyPlusBtn = document.getElementById('economyPlusBtn');
-economyPlusBtn.addEventListener('click',function(e){
-    economyBtnHandler(true);
-});
-
-const economyMinusBtn = document.getElementById('economyMinusBtn');
-economyMinusBtn.addEventListener('click',function(e){
-    economyBtnHandler(false);
-})
 
 function economyBtnHandler(isIncrease) {
     const economyClass = document.getElementById('economyClass');
