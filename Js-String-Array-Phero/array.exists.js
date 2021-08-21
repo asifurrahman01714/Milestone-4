@@ -4,7 +4,13 @@ function megaFriend(friends) {
     }
     console.log(Array.isArray(friends));
     let mega = friends[0];
-    for (const friend of friends) {
+    // for (const friend of friends) {
+    //     if (friend.length > mega.length) {
+    //         mega = friend;
+    //     }
+    // }
+    for (let i = 0; i < friends.length; i++) {
+        const friend = friends[i];
         if (friend.length > mega.length) {
             mega = friend;
         }
