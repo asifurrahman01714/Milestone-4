@@ -39,20 +39,20 @@
                     <!-- memory button -->
                     <div class="mt-5">
                         <h5 class="fw-bold">Memory</h5>
-                        <button id="memory8GB" type="button" class="btn btn-outline-secondary">8Gb unified
+                        <button id="memoryBtn8GB" type="button" class="btn btn-outline-secondary">8Gb unified
                             Memory</button>
-                        <button id="memory16GB" type="button" class="btn btn-outline-secondary">16Gb unified
+                        <button id="memoryBtn16GB" type="button" class="btn btn-outline-secondary">16Gb unified
                             Memory</button>
                     </div>
 
                     <!-- storage button -->
                     <div class="mt-5">
                         <h5 class="fw-bold">Storage</h5>
-                        <button id="storage256GB" type="button" class="btn btn-outline-secondary">256GB SSD
+                        <button id="storageBtn256GB" type="button" class="btn btn-outline-secondary">256GB SSD
                             storage</button>
-                        <button id="storage512GB" type="button" class="btn btn-outline-secondary">512GB SSD
+                        <button id="storageBtn512GB" type="button" class="btn btn-outline-secondary">512GB SSD
                             storage</button>
-                        <button id="storage1T" type="button" class="btn btn-outline-secondary">1TB unified
+                        <button id="storageBtn1T" type="button" class="btn btn-outline-secondary">1TB unified
                             Memory</button>
                     </div>
 
@@ -82,7 +82,7 @@
                                     <td>$<span id="storageField">0</span></td>
                                 </tr>
                                 <tr>
-                                    <td>Extra Shippin charge</td>
+                                    <td>Extra Shipping charge</td>
                                     <td>$<span id="shippingField">0</span></td>
                                 </tr>
                             </tbody>
@@ -90,7 +90,7 @@
                             <hr class="bg-dark">
                             <tr class="p-5">
                                 <td>Total Price</td>
-                                <td>$<span id="subTotal">1299</span></td>
+                                <td>$<span id="totalPrice">1299</span></td>
                             </tr>
                         </table>
                     </div>
@@ -100,7 +100,7 @@
 
         <div class="text-center mb-5">
             <hr class="bg-dark">
-            <h1>Total Price: $<span>1299</span></h1>
+            <h1>Total Price: $<span id="grandTotal">1299</span></h1>
         </div>
     </main>
 
