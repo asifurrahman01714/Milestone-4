@@ -82,7 +82,7 @@ function promoCode() {
     const totalPrice = document.getElementById('total-price').innerText;
     const promoCodeInput = document.getElementById('promo-Input');
     const promoCode = promoCodeInput.value
-    const givenPromoCode = 'stevekaku';
+    const givenPromoCode = 'stevejobs';
     if (promoCode == givenPromoCode) {
         const discountPrice = parseFloat(totalPrice) * 20 / 100;
         const totalDiscount = parseFloat(totalPrice) - discountPrice;
@@ -94,15 +94,3 @@ function promoCode() {
 
 
 
-/* // of promocode
-document.getElementById('promo-btn').addEventListener('click', function () {
-
-    const promoInput = document.getElementById('promo-Input');
-    if (promoInput.value == "stevekaku") {
-        const promoOut = document.getElementById('lastTotal');
-        const promoDiscount = promoOut.innerText * 20 / 100;
-        promoOut.innerText = promoOut.innerText - promoDiscount;
-    }
-    document.getElementById("promo-btn").disabled = true;
-    promoInput.value = "";
-}) */
